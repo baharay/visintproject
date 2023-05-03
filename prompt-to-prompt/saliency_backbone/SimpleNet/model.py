@@ -16,8 +16,8 @@ class PNASModel(nn.Module):
 
     def __init__(self, num_channels=3, train_enc=False, load_weight=1):
         super(PNASModel, self).__init__()
-        print()
-        print(self.path)
+        print("AAAAA")
+        #print(self.path)
 
         
         self.path = '/sinergia/bahar/visual-int/visintproject/prompt-to-prompt/saliency_backbone/PNAS/PNASNet-5_Large.pth'
