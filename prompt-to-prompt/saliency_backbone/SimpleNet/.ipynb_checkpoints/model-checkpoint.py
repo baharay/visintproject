@@ -16,9 +16,12 @@ class PNASModel(nn.Module):
 
     def __init__(self, num_channels=3, train_enc=False, load_weight=1):
         super(PNASModel, self).__init__()
+        print("AAAAA")
+        #print(self.path)
+
+        
         self.path = '/sinergia/bahar/visual-int/visintproject/prompt-to-prompt/saliency_backbone/PNAS/PNASNet-5_Large.pth'
        # self.path = '../PNAS/PNASNet-5_Large.pth'
-        print(self.path)
         self.pnas = NetworkImageNet(216, 1001, 12, False, PNASNet)
         if load_weight:
             self.pnas.load_state_dict(torch.load(self.path))
