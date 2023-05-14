@@ -1,5 +1,6 @@
-diffusers==0.3.0
-transformers
+diffusers==0.6.0
+transformers==4.24.0
 ftfy
 opencv-python
 ipywidgets
+accelerate
